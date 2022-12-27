@@ -1,18 +1,22 @@
 import { useState } from "react";
-const Home = () => {
-  //let name = "manoj";
-  const [name, setName] = useState("mario");
+import BlogList from "./BlogsList";
 
-  const handleClick = () => {
-    setName("jo");
-    //console.log(name);
-  };
+const Home = () => {
+  const [blogs, setBlogs] = useState([
+    { title: "First Blog", author: "manoj", id: 1 },
+    { title: "My name is Kantha Rao", author: "kantha", id: 2 },
+    { title: "My name is Lalitha Kumari", author: "lalitha", id: 3 },
+    { title: "My name is Manoj Kumar", author: "manoj", id: 4 },
+    { title: "My second blog", author: "lalitha", id: 5 },
+  ]);
 
   return (
     <div className="home">
-      <h1>This is the home Content</h1>
-      <h3>{name}</h3>
-      <button onClick={handleClick}>Click Me</button>
+      <BlogList blogs={blogs} title="All Blogs" />
+      <BlogList
+        blogs={blogs.filter((blog) => blog.author === "lalitha")}
+        title="All Lalitha Blogs"
+      />
     </div>
   );
 };
