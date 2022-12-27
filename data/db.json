@@ -1,0 +1,22 @@
+{
+  "blogs": [
+    {
+      "title": "my first blog",
+      "body": "Nothing to see here get lost,George was born blind due to under-developed optic nerves, which fueled his interest in the blindness arena. He earned a Bachelor of Science in finance with a minor in economics, a Master of Science in Education in Rehabilitation Teaching of Blind Adults from Northern Illinois University, as well as a certificate in nonprofit management from the University of Illinois  Chicago",
+      "author": "Manoj",
+      "id": 1
+    },
+    {
+      "title": "my second blog",
+      "body": "Told you nothing to see here,George was born blind due to under-developed optic nerves, which fueled his interest in the blindness arena. He earned a Bachelor of Science in finance with a minor in economics, a Master of Science in Education in Rehabilitation Teaching of Blind Adults from Northern Illinois University, as well as a certificate in nonprofit management from the University of Illinois Chicago.",
+      "author": "lalitha",
+      "id": 2
+    },
+    {
+      "title": "my third blog",
+      "body": "oh my god last warning",
+      "author": "kantha",
+      "id": 3
+    }
+  ]
+}
