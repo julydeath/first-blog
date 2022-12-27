@@ -8,12 +8,12 @@ const Home = () => {
     setBlogs(newBlogs);
   };
   useEffect(() => {
-    fetch("http://localhost:8000/blogs")
+    fetch("https://d6t2vunx.directus.app/items/blogs")
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setBlogs(data);
+        setBlogs(data.data);
       });
   }, []);
   return (
